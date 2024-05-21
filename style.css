@@ -3,30 +3,53 @@ div {
     border: 1px solid black;
     width: 200px;
     height: 200px;
-}
-
-.vermelha {
-    background-color: red;
-}
-
-.azul {
-    background-color: blue;
-}
-
-#canto1,
-#canto2,
-#canto3,
-#canto4 {
-    border-color: darkgray; 
-}
-
-#canto1:hover,
-#canto2:hover,
-#canto3:hover,
-#canto4:hover {
-    background-color: yellow; 
-}
-
-.quadrado {
-    margin: -2px; 
-}
+    margin: -3px;
+    }
+    
+    #line-1 {
+      margin-top: 50px;
+      margin-left: 50px;  
+    }
+    
+    #line-2 {
+      margin-left: 50px;  
+    }
+    
+    #line-3 {
+      margin-left: 50px;  
+    }
+    
+    #line-4 {
+      margin-left: 50px;  
+    }
+    
+    #line-5 {
+      margin-left: 50px;
+      margin-bottom: 50px;  
+    }
+    
+    .border {
+      background-color: red;
+      border: 2px solid black;
+    }
+    
+    .border:hover {
+      background-color: aqua;
+      cursor: pointer;
+    }
+    
+    .red {
+      background-color: red;
+    }
+    
+    .blue {
+      background-color:darkturquoise;
+    }
+    
+    .green {
+      background-color: forestgreen;
+    }
+    
+    .yellow {
+      background-color: yellow;
+    }
