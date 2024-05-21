@@ -1,0 +1,35 @@
+/* Estilo geral para todas as divs com a classe quadrado */
+div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.vermelha {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+/* Estilos específicos para os cantos */
+#canto1,
+#canto2,
+#canto3,
+#canto4 {
+    border-color: darkgray; /* borda mais escura */
+}
+
+/* Estilo hover para os cantos */
+#canto1:hover,
+#canto2:hover,
+#canto3:hover,
+#canto4:hover {
+    background-color: yellow; /* cor amarela ao passar o mouse */
+}
+
+.quadrado {
+    margin: -2px; /* Para ajustar o espaço entre as divs */
+}
