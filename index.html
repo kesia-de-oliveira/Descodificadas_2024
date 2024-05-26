@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadro Késia </title>
+    <title>Caixa Késia Oliveira</title>
     <link rel="icon" href="Borboleta.ico" type="image/x-icon">
     <style>
         body {
@@ -50,7 +50,7 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%; 
-            border: 8px solid #4682B4; /
+            border: 8px solid #4682B4; 
             box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.8), 0 0 0 16px rgba(70, 130, 180, 0.8); 
             padding: 10px; 
             text-align: center;
@@ -66,7 +66,7 @@
         }
 
         .box p {
-            color: yellow;
+            color: white;
             font-size: 24px;
             font-weight: bold;
             position: relative;
@@ -85,4 +85,47 @@
             z-index: 0;
             border-radius: 50%;
         }
-    </style
+
+        .border-container {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border-container::before,
+        .border-container::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .border-container::before {
+            width: 110%;
+            height: 110%;
+            border: 8px solid rgba(255, 0, 0, 0.6); 
+        }
+
+        .border-container::after {
+            width: 130%;
+            height: 130%;
+            border: 8px solid rgba(0, 255, 0, 0.6); 
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="container">
+            <div class="border-container">
+                <div class="box">
+                    <div class="overlay"></div>
+                    <p>Descodificadas K</p>
+                    <img src="Borboleta.ico" alt="Borboleta">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
