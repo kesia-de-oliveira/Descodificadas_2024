@@ -1,49 +1,64 @@
-div {
-    display: inline-block;
-    border: 1px solid black;
-    width: 200px;
-    height: 200px;
-    margin: -3px; 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
 }
 
-#line-1 {
-    margin-top: 50px;
-    margin-left: 50px;
+.box {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-image: url('Lótus.webp.webp'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%; 
+    z-index: 2;
 }
 
-#line-2,
-#line-3,
-#line-4,
-#line-5 {
-    margin-left: 50px;
+.box::before, .box::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%; 
 }
 
-#line-5 {
-    margin-bottom: 50px;
+.box::before {
+    border: 5px solid rgba(255, 255, 255, 0.5); 
+    z-index: -1;
 }
 
-.border {
-    background-color: red;
-    border: 2px solid black;
+.box::after {
+    border: 10px solid rgba(0, 0, 0, 0.3); 
+    transform: scale(1.1);
+    z-index: -2;
 }
 
-.border:hover {
-    background-color: aqua;
-    cursor: pointer;
+.box p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 2;
+    position: relative;
 }
 
-.red {
-    background-color: red;
-}
-
-.blue {
-    background-color: darkturquoise;
-}
-
-.green {
-    background-color: forestgreen;
-}
-
-.yellow {
-    background-color: yellow;
+.outer-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 420px; 
+    width: 420px; 
+    border: 15px solid rgba(100, 100, 100, 0.6); 
+    border-radius: 50%;
+    z-index: -3;
 }
