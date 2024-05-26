@@ -3,15 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caixa Criativa</title>
+    <title>Box Model Késia</title>
     <link rel="icon" href="Borboleta.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .box {
+            position: relative;
+            height: 400px;
+            width: 400px;
+            background-image: url('Lótus.webp'); 
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            border-radius: 50%; 
+            border: 10px solid rgba(0, 255, 0, 0.6); 
+            box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.6); 
+            padding: 10px; 
+            text-align: center;
+            outline: 10px solid blue; 
+        }
+
+        .box p {
+            color: yellow;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+        }
+
+        .overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: 0;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <div class="outer-border"></div>
     <div class="box">
-        <p>Descodificadas</p>
+        <div class="overlay"></div>
+        <p>Descodificadas-K.</p>
     </div>
 </body>
 </html>
-
