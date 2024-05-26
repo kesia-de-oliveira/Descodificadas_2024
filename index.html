@@ -12,13 +12,24 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #e0e0e0; 
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 20px; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
         }
 
         .box {
             position: relative;
-            height: 400px;
-            width: 400px;
+            height: 90%;
+            width: 90%;
             background-image: url('Lótus.webp'); 
             background-size: cover;
             background-position: center;
@@ -27,15 +38,23 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%; 
-            border: 10px solid rgba(0, 255, 0, 0.6); 
-            box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.6); 
+            border: 8px solid #4682B4; 
+            box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.8), 0 0 0 16px rgba(70, 130, 180, 0.8); 
             padding: 10px; 
             text-align: center;
-            outline: 10px solid blue; 
+        }
+
+        .box img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
         }
 
         .box p {
-            color: yellow;
+            color: #FFFFFF; 
             font-size: 24px;
             font-weight: bold;
             position: relative;
@@ -50,16 +69,19 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba(0, 0, 0, 0.5); 
+            background: rgba(0, 0, 0, 0.4); 
             z-index: 0;
             border-radius: 50%;
         }
     </style>
 </head>
 <body>
-    <div class="box">
-        <div class="overlay"></div>
-        <p>Descodificadas-K.</p>
+    <div class="container">
+        <div class="box">
+            <div class="overlay"></div>
+            <p>Descodificadas K</p>
+            <img src="Borboleta.ico" alt="Borboleta">
+        </div>
     </div>
 </body>
 </html>
