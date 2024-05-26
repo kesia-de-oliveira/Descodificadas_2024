@@ -7,11 +7,22 @@ body {
     background-color: #f0f0f0;
 }
 
+.outer-border {
+    position: absolute;
+    top: calc(50% - 210px);
+    left: calc(50% - 210px);
+    height: 420px; /* Tamanho ligeiramente maior para incluir a borda */
+    width: 420px; /* Tamanho ligeiramente maior para incluir a borda */
+    border: 10px solid rgba(100, 100, 100, 0.6); /* Primeira borda */
+    border-radius: 50%;
+    z-index: -3;
+}
+
 .box {
     position: relative;
     height: 400px;
     width: 400px;
-    background-image: url('Lótus.webp.webp'); 
+    background-image: url('Lótus.webp'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -20,27 +31,8 @@ body {
     overflow: hidden;
     border-radius: 50%; 
     z-index: 2;
-}
-
-.box::before, .box::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%; 
-}
-
-.box::before {
-    border: 5px solid rgba(255, 255, 255, 0.5); 
-    z-index: -1;
-}
-
-.box::after {
-    border: 10px solid rgba(0, 0, 0, 0.3); 
-    transform: scale(1.1);
-    z-index: -2;
+    border: 10px solid rgba(0, 255, 0, 0.6); 
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.6); 
 }
 
 .box p {
@@ -50,15 +42,4 @@ body {
     text-align: center;
     z-index: 2;
     position: relative;
-}
-
-.outer-border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 420px; 
-    width: 420px; 
-    border: 15px solid rgba(100, 100, 100, 0.6); 
-    border-radius: 50%;
-    z-index: -3;
 }
