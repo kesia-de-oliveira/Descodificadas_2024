@@ -22,17 +22,17 @@
         .inner-box-1 {
             padding: 10px;
             background-color: #007BFF; /* Azul */
-            border: 5px dashed #007BFF; /* Borda tracejada */
+            border: 5px dotted #007BFF; /* Borda pontilhada */
         }
         .inner-box-2 {
             padding: 10px;
             background-color: #28A745; /* Verde */
-            border: 5px solid #28A745; /* Borda sólida */
+            border: 5px dashed #28A745; /* Borda tracejada */
         }
         .inner-box-3 {
             padding: 10px;
             background-color: #DC3545; /* Vermelho */
-            border: 5px double #DC3545; /* Borda dupla */
+            border: 5px solid #DC3545; /* Borda sólida */
         }
         .inner-box-4 {
             padding: 10px;
@@ -68,4 +68,32 @@
             color: white;
             font-size: 24px;
             font-weight: bold;
-            text-shadow: 2px 2px 4
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            z-index: 1;
+        }
+        .text span {
+            font-style: italic;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-box-1">
+            <div class="inner-box-2">
+                <div class="inner-box-3">
+                    <div class="inner-box-4">
+                        <div class="inner-box-5">
+                            <div class="image-container">
+                                <img src="Lótus.webp" alt="Flor de Lótus">
+                                <div class="text"><span>Descodificadas K</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
