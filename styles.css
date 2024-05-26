@@ -11,9 +11,9 @@ body {
     position: absolute;
     top: calc(50% - 210px);
     left: calc(50% - 210px);
-    height: 420px; /* Tamanho ligeiramente maior para incluir a borda */
-    width: 420px; /* Tamanho ligeiramente maior para incluir a borda */
-    border: 10px solid rgba(100, 100, 100, 0.6); /* Primeira borda */
+    height: 420px; 
+    width: 420px; 
+    border: 10px solid rgba(100, 100, 100, 0.6); 
     border-radius: 50%;
     z-index: -3;
 }
@@ -33,6 +33,12 @@ body {
     z-index: 2;
     border: 10px solid rgba(0, 255, 0, 0.6); 
     box-shadow: 0 0 0 10px rgba(255, 0, 0, 0.6); 
+    padding: 20px; 
+    outline-width: 36px;
+    outline-style: groove;
+    outline-color: rgb(174, 17, 114);
+    margin: auto;
+    margin-top: 100px;
 }
 
 .box p {
@@ -42,4 +48,6 @@ body {
     text-align: center;
     z-index: 2;
     position: relative;
+    padding-top: 100px;
+    font-style: italic;
 }
