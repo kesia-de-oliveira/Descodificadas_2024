@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model Késia</title>
+    <title>Quadro Késia </title>
     <link rel="icon" href="Borboleta.ico" type="image/x-icon">
     <style>
         body {
@@ -13,6 +13,18 @@
             height: 100vh;
             margin: 0;
             background-color: #e0e0e0; 
+        }
+
+        .outer-container {
+            height: 450px;
+            width: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #000; 
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+            background-color: #fff;
+            border-radius: 20px;
         }
 
         .container {
@@ -38,7 +50,7 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%; 
-            border: 8px solid #4682B4; 
+            border: 8px solid #4682B4; /
             box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.8), 0 0 0 16px rgba(70, 130, 180, 0.8); 
             padding: 10px; 
             text-align: center;
@@ -50,11 +62,11 @@
             right: 20px;
             width: 50px;
             height: 50px;
-            z-index: 1;
+            z-index: 2;
         }
 
         .box p {
-            color: #FFFFFF; 
+            color: yellow;
             font-size: 24px;
             font-weight: bold;
             position: relative;
@@ -73,15 +85,4 @@
             z-index: 0;
             border-radius: 50%;
         }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <div class="box">
-            <div class="overlay"></div>
-            <p>Descodificadas K</p>
-            <img src="Borboleta.ico" alt="Borboleta">
-        </div>
-    </div>
-</body>
-</html>
+    </style
