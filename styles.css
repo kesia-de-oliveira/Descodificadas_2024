@@ -11,9 +11,9 @@ body {
     position: absolute;
     top: calc(50% - 210px);
     left: calc(50% - 210px);
-    height: 420px; 
-    width: 420px; 
-    border: 10px solid rgba(100, 100, 100, 0.6); 
+    height: 420px; /* Tamanho ligeiramente maior para incluir a borda */
+    width: 420px; /* Tamanho ligeiramente maior para incluir a borda */
+    border: 10px solid rgba(100, 100, 100, 0.6); /* Primeira borda */
     border-radius: 50%;
     z-index: -3;
 }
