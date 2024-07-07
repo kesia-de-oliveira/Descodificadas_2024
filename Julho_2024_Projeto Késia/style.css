@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+header img {
+  max-width: 100px;
+}
+nav {
+  margin-left: auto;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+}
+.highlight {
+  padding: 20px;
+  background-color: #e0e0e0;
+  text-align: center;
+}
+.button {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+}
+.gallery div {
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+.gallery div img {
+  width: 100%;
+  height: auto;
+}
+.gallery div p {
+  text-align: center;
+}
+.video {
+  text-align: center;
+  margin: 20px 0;
+}
+.map {
+  text-align: center;
+  margin: 20px 0;
+}
+.form {
+  padding: 20px;
+  text-align: center;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.form form input, .form form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.form form button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+footer {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 10px;
+}
