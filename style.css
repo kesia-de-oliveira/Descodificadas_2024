@@ -66,12 +66,12 @@ a:hover {
 
 .section {
     margin: 0 auto;
-    padding: 20px 0; /* Ajuste de espaçamento */
+    padding: 20px 0; 
 }
 
 .intro-section {
     padding: 40px 20px;
-    margin: 0 auto; /* Ajuste de espaçamento */
+    margin: 0 auto; 
 }
 
 #main {
@@ -111,17 +111,17 @@ aside h3 {
 
 .text {
     margin: 0 auto;
-    padding: 20px; /* Ajuste de espaçamento */
+    padding: 20px; 
 }
 
 .image {
     margin: 0 auto;
-    padding: 0; /* Ajuste de espaçamento */
+    padding: 0; 
 }
 
 .about-section {
     padding: 40px 20px;
-    margin: 0 auto; /* Ajuste de espaçamento */
+    margin: 0 auto; 
 }
 
 footer {
@@ -151,14 +151,14 @@ footer {
     }
 
     .section {
-        padding: 20px 10px; /* Ajuste de espaçamento responsivo */
+        padding: 20px 10px; 
     }
 
     .intro-section, .about-section {
-        padding: 20px 10px; /* Ajuste de espaçamento responsivo */
+        padding: 20px 10px; 
     }
 
     .text {
-        padding: 10px; /* Ajuste de espaçamento responsivo */
+        padding: 10px; 
     }
 }
